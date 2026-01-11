@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  /* Main Container */
+  .popular-posts {
+    width: 350px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 1px solid #e0e0e0;
+    background: #fff;
+  }
+
+  /* Header Section */
+  .widget-header {
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .widget-header h2 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 400;
+    color: #333;
+  }
+
+  /* Post Item */
+  .post-item {
+    display: flex; /* Image aur Text ko side-by-side lane ke liye */
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    align-items: center;
+  }
+
+  .post-item:last-child {
+    border-bottom: none;
+  }
+
+  /* Thumbnail Styling */
+  .post-thumb {
+    width: 60px;
+    height: 60px;
+    object-fit: cover; /* Image ko box mein fit karne ke liye */
+    margin-right: 15px;
+  }
+
+  /* Text Content */
+  .post-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .post-title {
+    font-size: 18px;
+    color: #004a99; /* Blue color jaisa screenshot mein hai */
+    text-decoration: none;
+    margin-bottom: 4px;
+  }
+
+  .post-subtitle {
+    font-size: 14px;
+    color: #666;
+  }
+</style>
+</head>
+<body>
+
+<div class="popular-posts">
+  <div class="widget-header">
+    <h2>Popular Posts</h2>
+  </div>
+
+  <div class="post-item">
+    <img src="https://via.placeholder.com/60" class="post-thumb" alt="Post 1">
+    <div class="post-content">
+      <a href="#" class="post-title">Lorem</a>
+      <span class="post-subtitle">Sed mattis nunc</span>
+    </div>
+  </div>
+
+  <div class="post-item">
+    <img src="https://via.placeholder.com/60" class="post-thumb" alt="Post 2">
+    <div class="post-content">
+      <a href="#" class="post-title">Ipsum</a>
+      <span class="post-subtitle">Praes tinci sed</span>
+    </div>
+  </div>
+
+  <div class="post-item">
+    <img src="https://via.placeholder.com/60" class="post-thumb" alt="Post 3">
+    <div class="post-content">
+      <a href="#" class="post-title">Dorum</a>
+      <span class="post-subtitle">Ultricies congue</span>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
