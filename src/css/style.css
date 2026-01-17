@@ -137,7 +137,13 @@
 }
 .read-more-button {
   border: 1px solid black;
+  padding: 15px;
+  font-size: 15px;
+  font-weight: 100px;
+  margin-top: 15px;
+  margin-bottom: -200px;
 }
 svg {
-  font-size: 20px;
+  width: 10px;
+  height: 10px;
 }
