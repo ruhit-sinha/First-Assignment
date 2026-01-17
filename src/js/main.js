@@ -40,5 +40,11 @@ for (let x = 1; x <= 3; x++) {
 console.log( result );
 
 let name = 'Ruhi';
-name += 't';
+name += 't';         // shortcut of name = name + 't';  +=  yaha = ka mtlb hai name
 console.log( name );
+
+function hello_guys ()
+{
+    console.log( "kutta" );
+}
+hello_guys();
