@@ -126,6 +126,7 @@ body {
 .popular-items .item:hover {
   cursor: pointer;
   background-color: #e4e1e1;
+  animation: 1s ruhit alternate infinite;
 }
 
 /* ruhit css */
@@ -313,7 +314,7 @@ svg {
 
 /* Jab screen 600px se chhoti ho (Mobile) */
 @media screen and (max-width: 600px) {
-  .container {
+  body {
     width: 100%; /* Fixed width ki jagah 100% use karein */
     padding: 10px;
   }
