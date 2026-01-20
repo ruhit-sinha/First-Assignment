@@ -313,9 +313,10 @@ svg {
 }
 
 /* Jab screen 600px se chhoti ho (Mobile) */
-@media screen and(max-width: 600px) {
-  .container {
+@media only screen and(max-width: 600px) {
+  body {
     width: 100%; /* Fixed width ki jagah 100% use karein */
-    padding: 10px;
+    flex-direction: column;
+    padding: 100px;
   }
 }
