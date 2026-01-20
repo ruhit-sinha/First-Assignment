@@ -4,6 +4,9 @@
   box-sizing: border-box;
   font-family: "Raleway", sans-serif;
 }
+:root {
+  --box-shadow: 0px 0px 10px 6px rgb(196, 195, 195);
+}
 
 body {
   background-color: #f1f1f1;
@@ -53,7 +56,7 @@ body {
   height: 555px;
   background-color: white;
   border-style: hidden;
-  box-shadow: 0px 0px 10px 6px rgb(196, 195, 195);
+  box-shadow: var(--box-shadow);
 }
 
 .blogs-section .blog-card img {
@@ -96,7 +99,7 @@ body {
   /* gap: 0px; */
   border: 1px solid black;
   border-style: hidden;
-  box-shadow: 0px 0px 10px 5px rgb(221, 221, 221);
+  box-shadow: var(--box-shadow);
   border-radius: 2%;
 }
 
@@ -230,10 +233,11 @@ body {
 }
 
 .blogs-section .blog-card .comments-count {
-  margin-left: 740px;
-  margin-top: -30px;
+  margin-left: auto;
   font-size: 16px;
   font-weight: 650;
+  display: flex;
+  align-items: center;
 }
 
 .count {
@@ -260,9 +264,9 @@ body {
   font-size: 15px;
   font-weight: 600;
   text-transform: uppercase;
-  margin-top: 35px;
-  margin-left: 25px;
   background-color: white;
+  text-decoration: none;
+  color: black;
 }
 
 svg {
@@ -313,10 +317,18 @@ svg {
 }
 
 /* Jab screen 600px se chhoti ho (Mobile) */
-@media only screen and(max-width: 600px) {
+@media (max-width: 768px) {
   body {
     width: 100%; /* Fixed width ki jagah 100% use karein */
     flex-direction: column;
     padding: 100px;
   }
+}
+
+@media (max-width: 1024px) {
+}
+
+.comment-info {
+  display: flex;
+  padding: 20px;
 }
