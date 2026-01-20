@@ -313,7 +313,7 @@ svg {
 }
 
 /* Jab screen 600px se chhoti ho (Mobile) */
-@media screen and (max-width: 600px) {
+@media screen and(max-width: 600px) {
   .container {
     width: 100%; /* Fixed width ki jagah 100% use karein */
     padding: 10px;
