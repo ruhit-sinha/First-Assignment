@@ -36,11 +36,13 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 70% 30%;
   gap: 30px;
-  max-width: 1200px;
+  max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
+  border: 1px solid black;
+  padding: 20px;
 }
 
 .blogs-section {
@@ -60,7 +62,7 @@ body {
 }
 
 .blogs-section .blog-card img {
-  width: 900px;
+  width: 100%;
 }
 
 .blog-card .title {
@@ -142,7 +144,6 @@ body {
 
 .author-card {
   border: 1px solid black;
-  height: 440px;
   background-color: white;
   border-style: hidden;
   box-shadow: 0px 0px 10px 5px rgb(221, 221, 221);
@@ -156,7 +157,9 @@ body {
   font-weight: 600;
   font-size: 22px;
 }
-
+.author-card img {
+  width: 100%;
+}
 .bio {
   /* font-size: 19px; */
   line-height: 1.5;
